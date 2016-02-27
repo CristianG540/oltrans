@@ -9,6 +9,20 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Avenir-LT-95-Black';
+  src: url('../fonts/Avenir-LT-95-Black.eot');
+  src: url('../fonts/Avenir-LT-95-Black.eot?#iefix') format('embedded-opentype'), url('../fonts/Avenir-LT-95-Black.woff') format('woff'), url('../fonts/Avenir-LT-95-Black.ttf') format('truetype'), url('../fonts/Avenir-LT-95-Black.svg#icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Avenir-LT-45-Book';
+  src: url('../fonts/Avenir-LT-45-Book.eot');
+  src: url('../fonts/Avenir-LT-45-Book.eot?#iefix') format('embedded-opentype'), url('../fonts/Avenir-LT-45-Book.woff') format('woff'), url('../fonts/Avenir-LT-45-Book.ttf') format('truetype'), url('../fonts/Avenir-LT-45-Book.svg#icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   overflow-x: hidden;
 }
@@ -23,7 +37,7 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-  color: white;
+  color: #faa305;
   outline: none;
 }
 h1,
@@ -59,7 +73,7 @@ hr.star-light {
   border-color: white;
 }
 hr.star-light:after {
-  background-color: white;
+  background-color: #faa305;
   color: white;
 }
 hr.star-primary {
@@ -72,9 +86,20 @@ hr.star-primary:after {
 .img-centered {
   margin: 0 auto;
 }
+.btn-blue {
+  color: #ffffff;
+  background-color: #006eaa;
+  border-color: #006eaa;
+  border-radius: 0px;
+}
+.btn-blue:hover {
+  background-color: #0081c7;
+  border-color: #0081c7;
+}
 header {
   text-align: center;
-  background: white;
+  background-image: url(../img/web-diseno-final.png);
+  background-color: rgba(1, 57, 103, 0.48);
   color: white;
 }
 header .container {
@@ -85,14 +110,14 @@ header img {
   display: block;
   margin: 0 auto 20px;
 }
-header .intro-text .name {
+header .intro-text .title {
   display: block;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
+  font-family: "Avenir-LT-95-Black", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   font-size: 2em;
 }
-header .intro-text .skills {
+header .intro-text .mision {
+  font-family: "Avenir-LT-45-Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.25em;
   font-weight: 300;
 }
@@ -101,10 +126,10 @@ header .intro-text .skills {
     padding-top: 200px;
     padding-bottom: 100px;
   }
-  header .intro-text .name {
+  header .intro-text .title {
     font-size: 4.75em;
   }
-  header .intro-text .skills {
+  header .intro-text .mision {
     font-size: 1.75em;
   }
 }
@@ -203,7 +228,7 @@ section h2 {
   font-size: 3em;
 }
 section.success {
-  background: white;
+  background: #6eabcd;
   color: white;
 }
 section.success a,
@@ -222,6 +247,15 @@ section.success a.active {
     padding-top: 75px;
   }
 }
+#portfolio {
+  background-color: #006eaa;
+  color: white;
+}
+#portfolio .intro-text .title {
+  font-family: "Avenir-LT-95-Black", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+}
 #portfolio .portfolio-item {
   margin: 0 0 15px;
   right: 0;
@@ -233,7 +267,7 @@ section.success a.active {
   margin: 0 auto;
 }
 #portfolio .portfolio-item .portfolio-link .caption {
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(250, 163, 5, 0.9);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -266,6 +300,14 @@ section.success a.active {
   z-index: 2;
 }
 @media (min-width: 767px) {
+  #portfolio {
+    background: url(../img/bus1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  #portfolio .intro-text .title {
+    font-size: 4.75em;
+  }
   #portfolio .portfolio-item {
     margin: 0 0 30px;
   }
@@ -282,7 +324,7 @@ section.success a.active {
 .btn-outline:focus,
 .btn-outline:active,
 .btn-outline.active {
-  color: white;
+  color: #faa305;
   background: white;
   border: solid 2px white;
 }
@@ -330,7 +372,7 @@ section.success a.active {
   opacity: 1;
 }
 .floating-label-form-group-with-focus label {
-  color: white;
+  color: #faa305;
 }
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eeeeee;
@@ -443,4 +485,55 @@ footer .footer-below {
 .portfolio-modal .modal-backdrop {
   opacity: 0;
   display: none;
+}
+#comodidad {
+  background-image: none;
+}
+#comodidad .intro-text .title {
+  font-family: "Avenir-LT-35-Light";
+  font-size: 2em;
+  font-weight: 300;
+  color: #faa305;
+}
+#comodidad .intro-text .text {
+  font-family: "Avenir-LT-45-Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.25em;
+  font-weight: 300;
+}
+@media (min-width: 768px) {
+  #comodidad {
+    background-image: url(../img/bus.png);
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+  }
+  #comodidad .intro-text .title {
+    font-size: 4.75em;
+  }
+  #comodidad .intro-text .mision {
+    font-size: 1.75em;
+  }
+}
+#conford .intro-text .title {
+  font-family: "Avenir-LT-35-Light";
+  font-size: 2em;
+  font-weight: 300;
+  color: #faa305;
+}
+#conford .intro-text .text {
+  padding-top: 20px;
+  font-family: "Avenir-LT-45-Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.25em;
+  font-weight: 300;
+}
+#conford .icons {
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+@media (min-width: 768px) {
+  #conford .intro-text .title {
+    font-size: 4.75em;
+  }
+  #conford .intro-text .mision {
+    font-size: 1.75em;
+  }
 }

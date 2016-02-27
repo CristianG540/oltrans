@@ -4,6 +4,8 @@
 
 // Incluyo las fuentes
 .include-custom-font('Avenir-LT-35-Light');
+.include-custom-font('Avenir-LT-95-Black');
+.include-custom-font('Avenir-LT-45-Book');
 
 body {
 	overflow-x: hidden;
@@ -75,9 +77,21 @@ hr.star-primary:after {
 	margin: 0 auto;
 }
 
+.btn-blue {
+    color: #ffffff;
+    background-color: #006eaa;
+    border-color: #006eaa;
+    border-radius: 0px;
+    &:hover {
+        background-color: #0081c7;
+        border-color: #0081c7;
+    }
+}
+
 header {
 	text-align: center;
-	background: @brand-success;
+    background-image: url(../img/web-diseno-final.png);
+    background-color: rgba(1, 57, 103, 0.48);
 	color: white;
 	.container {
 		padding-top: 100px;
@@ -88,18 +102,22 @@ header {
 		margin: 0 auto 20px;
 	}
 	.intro-text {
-		.name {
+		.title {
 			display: block;
-			font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-			text-transform: uppercase;
+			font-family: "Avenir-LT-95-Black", "Helvetica Neue", Helvetica, Arial, sans-serif;
+			//text-transform: uppercase;
 			font-weight: 700;
 			font-size: 2em;
 		}
-		.skills {
+		.mision {
+            font-family: "Avenir-LT-45-Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
 			font-size: 1.25em;
 			font-weight: 300;
 		}
 	}
+    .social-icons {
+        //padding-bottom: 50px;
+    }
 }
 
 @media(min-width:768px) {
@@ -109,10 +127,10 @@ header {
 			padding-bottom: 100px;
 		}
 		.intro-text {
-			.name {
+			.title {
 				font-size: 4.75em;
 			}
-			.skills {
+			.mision {
 				font-size: 1.75em;
 			}
 		}
@@ -224,7 +242,7 @@ section {
 }
 
 section.success {
-	background: @brand-success;
+	background: #6eabcd;
 	color: white;
 
     a,
@@ -247,6 +265,16 @@ section.success {
 }
 
 #portfolio {
+    background-color: #006eaa;
+    color: white;
+    .intro-text {
+		.title {
+			font-family: "Avenir-LT-95-Black", "Helvetica Neue", Helvetica, Arial, sans-serif;
+			//text-transform: uppercase;
+			font-weight: 700;
+			font-size: 2em;
+		}
+    }
     .portfolio-item {
         margin: 0 0 15px;
         right: 0;
@@ -294,6 +322,14 @@ section.success {
 
 @media(min-width:767px) {
     #portfolio {
+        background: url(../img/bus1.png);
+        background-repeat: no-repeat;
+        background-size:100%;
+        .intro-text {
+			.title {
+				font-size: 4.75em;
+			}
+        }
         .portfolio-item {
             margin: 0 0 30px;
         }
@@ -489,3 +525,81 @@ footer {
     	display: none;
     }
 }
+
+#comodidad {
+    background-image: none;
+    .intro-text {
+		.title {
+			font-family: "Avenir-LT-35-Light";
+			font-size: 2em;
+            font-weight: 300;
+            color: #faa305;
+		}
+		.text {
+            font-family: "Avenir-LT-45-Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
+			font-size: 1.25em;
+			font-weight: 300;
+		}
+	}
+}
+
+@media(min-width:768px) {
+
+	#comodidad {
+        background-image: url(../img/bus.png);
+        background-repeat: no-repeat;
+        background-position: 100% 0%;
+		.intro-text {
+			.title {
+				font-size: 4.75em;
+			}
+			.mision {
+				font-size: 1.75em;
+			}
+            .btn-blue {
+
+            }
+
+		}
+	}
+}
+
+#conford {
+    .intro-text {
+		.title {
+			font-family: "Avenir-LT-35-Light";
+			font-size: 2em;
+            font-weight: 300;
+            color: #faa305;
+		}
+		.text {
+            padding-top: 20px;
+            font-family: "Avenir-LT-45-Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
+			font-size: 1.25em;
+			font-weight: 300;
+		}
+	}
+    .icons {
+        padding-top: 10px;
+        padding-bottom: 40px;
+    }
+}
+
+@media(min-width:768px) {
+
+	#conford {
+		.intro-text {
+			.title {
+				font-size: 4.75em;
+			}
+			.mision {
+				font-size: 1.75em;
+			}
+            .btn-blue {
+
+            }
+
+		}
+	}
+}
+
