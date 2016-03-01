@@ -529,11 +529,17 @@ footer .footer-below {
   padding-top: 10px;
   padding-bottom: 40px;
 }
+#contact h2 {
+  font-size: 2em;
+}
 @media (min-width: 768px) {
   #conford .intro-text .title {
     font-size: 4.75em;
   }
   #conford .intro-text .mision {
     font-size: 1.75em;
+  }
+  #contact h2 {
+    font-size: 3em;
   }
 }
