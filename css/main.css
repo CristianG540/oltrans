@@ -224,6 +224,7 @@ header .intro-text .mision {
 }
 section {
   padding: 100px 0;
+  height: 100%;
 }
 section h2 {
   margin: 0;
@@ -251,6 +252,7 @@ section.success a.active {
 }
 #portfolio {
   background-color: #006eaa;
+  height: auto;
   color: white;
 }
 #portfolio .intro-text .title {
@@ -541,6 +543,9 @@ footer .footer-below {
 #conford .icons {
   padding-top: 10px;
   padding-bottom: 40px;
+}
+#contact {
+  height: auto;
 }
 #contact h2 {
   font-size: 2em;
