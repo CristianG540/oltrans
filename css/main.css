@@ -503,30 +503,30 @@ footer .footer-below {
   opacity: 0;
   display: none;
 }
-#comodidad {
+#miembros {
   background-image: none;
+  height: auto;
 }
-#comodidad .intro-text .title {
+#miembros .intro-text .title {
   font-family: "Avenir-LT-35-Light";
   font-size: 2em;
   font-weight: 300;
   color: #faa305;
 }
-#comodidad .intro-text .text {
+#miembros .intro-text .text {
   font-family: "Avenir-LT-45-Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.25em;
   font-weight: 300;
 }
 @media (min-width: 768px) {
-  #comodidad {
-    background-image: url(../img/bus.png);
+  #miembros {
     background-repeat: no-repeat;
     background-position: 100% 0%;
   }
-  #comodidad .intro-text .title {
+  #miembros .intro-text .title {
     font-size: 4.75em;
   }
-  #comodidad .intro-text .mision {
+  #miembros .intro-text .mision {
     font-size: 1.75em;
   }
 }
@@ -593,10 +593,10 @@ footer .footer-below {
     padding-top: 50px;
   }
 }
-.vcenter {
-  display: inline-block;
-  vertical-align: middle;
-  float: none;
+.vertical-center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .strokeme {
   color: white;

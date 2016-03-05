@@ -548,8 +548,9 @@ footer {
     }
 }
 
-#comodidad {
+#miembros {
     background-image: none;
+    height: auto;
     .intro-text {
 		.title {
 			font-family: "Avenir-LT-35-Light";
@@ -567,8 +568,8 @@ footer {
 
 @media(min-width:768px) {
 
-	#comodidad {
-        background-image: url(../img/bus.png);
+	#miembros {
+        //background-image: url(../img/bus.png);
         background-repeat: no-repeat;
         background-position: 100% 0%;
 		.intro-text {
@@ -679,10 +680,10 @@ footer {
     }
 }
 
-.vcenter {
-    display: inline-block;
-    vertical-align: middle;
-    float: none;
+.vertical-center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .strokeme {
