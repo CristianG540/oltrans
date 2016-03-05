@@ -238,11 +238,11 @@ header {
 
 section {
     padding: 100px 0;
+    height: 100%;
     h2 {
     	margin: 0;
     	font-size: 3em;
     }
-    height: 100%;
 }
 
 section.success {
@@ -262,6 +262,7 @@ section.success {
 @media(max-width:767px) {
 	section {
 		padding: 75px 0;
+        height: auto;
 	}
 	section.first {
 		padding-top: 75px;
@@ -434,6 +435,7 @@ footer {
     }
     .logo {
         padding-top: 55px;
+        padding-left: 50px;
     }
 	.footer-above {
 		padding-top: 50px;
@@ -673,3 +675,8 @@ footer {
     }
 }
 
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
