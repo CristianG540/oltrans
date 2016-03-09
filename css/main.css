@@ -548,6 +548,8 @@ footer .footer-below {
 }
 #contact {
   background-image: url(../img/mapa_rutas_oltrans.jpg);
+  background-size: 50%;
+  height: 300px;
 }
 #contact h2 {
   font-size: 2em;
