@@ -530,6 +530,9 @@ footer .footer-below {
     font-size: 1.75em;
   }
 }
+#conford {
+  height: auto;
+}
 #conford .intro-text .title {
   font-family: "Avenir-LT-35-Light";
   font-size: 2em;
